@@ -4,12 +4,12 @@
              xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="demo.LottiePage">
 	<ContentPage.Content>
-        <StackLayout>
+        <Grid>
             <lottie:AnimationView x:Name="AnimationView"
                 Animation="padlock_tick.json"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" />
-            <Button x:Name="TheButton" Text="Play" />
-        </StackLayout>
+            <BoxView x:Name="ClickBox" />
+        </Grid>
 	</ContentPage.Content>
 </ContentPage>
