@@ -17,6 +17,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)AnimationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BehaviorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -31,6 +34,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)AnimationPage.xaml.cs">
       <DependentUpon>AnimationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BehaviorPage.xaml.cs">
+      <DependentUpon>BehaviorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\SocialSecurityNumberBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
