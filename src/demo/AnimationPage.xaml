@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="demo.AnimationPage">
+	<ContentPage.Content>
+        <StackLayout Padding="10">
+            <BoxView Margin="0,100,0,0" x:Name="Box" WidthRequest="100" HeightRequest="30" HorizontalOptions="Center" Color="Green" />
+            <Button Margin="0,100,0,0" x:Name="Rotate" Text="Rotate" />
+            <Button x:Name="MoveUp" Text="Move up" />
+            <Button x:Name="MoveDown" Text="Move down" />
+            <Button x:Name="ScaleUp" Text="Scale up" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

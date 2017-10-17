@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:demo" 
              x:Class="demo.demoPage">
 	<StackLayout>
+        <Button x:Name="AnimationButton" Text="Animations" />
         <Button x:Name="lottieButton" Text="Lottie Animations" />
     </StackLayout>
 </ContentPage>

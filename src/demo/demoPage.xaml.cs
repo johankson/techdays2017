@@ -8,6 +8,7 @@ namespace demo
         {
             InitializeComponent();
             this.lottieButton.Clicked += (sender, e) => Navigation.PushAsync(new LottiePage());
+            this.AnimationButton.Clicked += (sender, e) => Navigation.PushAsync(new AnimationPage());
         }
     }
 }
