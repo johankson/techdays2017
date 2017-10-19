@@ -126,10 +126,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\checkmark.json" />
-    <BundleResource Include="Resources\padlock_tick.json" />
-  </ItemGroup>
   <Import Project="..\demo\demo.projitems" Label="Shared" Condition="Exists('..\demo\demo.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets')" />

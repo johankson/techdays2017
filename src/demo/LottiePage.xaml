@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="demo.LottiePage">
 	<ContentPage.Content>
-        <Grid>
-            <lottie:AnimationView x:Name="AnimationView"
-                Animation="padlock_tick.json"
-                VerticalOptions="FillAndExpand"
-                HorizontalOptions="FillAndExpand" />
-            <BoxView x:Name="ClickBox" />
-        </Grid>
+        <Label Text="This would be a great place for a cool vector animation based" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" />
 	</ContentPage.Content>
 </ContentPage>
