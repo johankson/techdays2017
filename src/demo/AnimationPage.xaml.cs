@@ -16,7 +16,7 @@ namespace demo
             };
 
             MoveUp.Clicked += async (sender, e) => {
-                await Box.TranslateTo(Box.TranslationX, Box.TranslationY - 30, 500, Easing.BounceIn);
+                await Box.TranslateTo(Box.TranslationX, Box.TranslationY - 30, 500, Easing.SpringOut);
             };
 
             MoveDown.Clicked += async (sender, e) => {

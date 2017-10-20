@@ -6,7 +6,8 @@
     x:Class="demo.BehaviorPage">
 	<ContentPage.Content>
         <StackLayout Padding="10">
-            <Entry Placeholder="SSN">
+            <Label FontAttributes="Bold" Text="SSN:" />
+            <Entry HeightRequest="30">
                 <Entry.Behaviors>
                     <behaviors:SocialSecurityNumberBehavior />
                 </Entry.Behaviors>

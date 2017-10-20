@@ -25,10 +25,12 @@ namespace demo.Behaviors
             var entry = (Entry)sender;
 
             entry.BackgroundColor = Color.Red;
+            entry.TextColor = Color.White;
 
             if(e.NewTextValue.Length == 13)
             {
                 entry.BackgroundColor = Color.Green;
+                entry.TextColor = Color.White;
             }
 
             if(e?.OldTextValue?.Length == 13 && e.NewTextValue.Length > e.OldTextValue.Length)
