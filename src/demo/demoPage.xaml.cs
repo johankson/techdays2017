@@ -10,6 +10,7 @@ namespace demo
             this.lottieButton.Clicked += (sender, e) => Navigation.PushAsync(new LottiePage());
             this.AnimationButton.Clicked += (sender, e) => Navigation.PushAsync(new AnimationPage());
             this.BehaviorButton.Clicked += (sender, e) => Navigation.PushAsync(new BehaviorPage());
+            this.EffectButton.Clicked += (sender, e) => Navigation.PushAsync(new EffectPage()); 
         }
     }
 }

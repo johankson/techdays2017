@@ -8,5 +8,6 @@
         <Button x:Name="BehaviorButton" Text="Behaviors" />
         <Button x:Name="AnimationButton" Text="Animations" />
         <Button x:Name="lottieButton" Text="Lottie Animations" />
+        <Button x:Name="EffectButton" Text="Effects" />
     </StackLayout>
 </ContentPage>

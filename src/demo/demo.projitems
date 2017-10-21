@@ -20,6 +20,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)BehaviorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)EffectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -38,6 +41,10 @@
       <DependentUpon>BehaviorPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\SocialSecurityNumberBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EffectPage.xaml.cs">
+      <DependentUpon>EffectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\AwesomeEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
