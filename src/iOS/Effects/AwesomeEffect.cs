@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using demo.iOS.Effects;
 using UIKit;
 using Xamarin.Forms;
@@ -14,6 +15,7 @@ namespace demo.iOS.Effects
 
         protected override void OnAttached()
         {
+         
         }
 
         protected override void OnDetached()
@@ -26,15 +28,28 @@ namespace demo.iOS.Effects
 
             if (args.PropertyName == "Text")
             {
-               if(Element is Entry e)
+                if (Element is Entry e)
                 {
                     if (e.Text.Length > 8)
                     {
                         Control.BackgroundColor = UIColor.FromRGB(255, 0, 0);
+
+                        if(!Control.Subviews.OfType<UIVisualEffectView>().Any())
+                        {
+                            var blur = UIBlurEffect.FromStyle(UIBlurEffectStyle.Light);
+                            var visualEffectView = new UIVisualEffectView(blur);
+                            visualEffectView.Frame = Control.Bounds;
+                            visualEffectView.Alpha = 0.7f;
+                            Control.Add(visualEffectView);
+						}
                     }
                     else
                     {
                         Control.BackgroundColor = UIColor.FromRGB(255, 255, 255);
+                        foreach(var s in Control.Subviews.OfType<UIVisualEffectView>())
+                        {
+                            s.RemoveFromSuperview();
+                        }
                     }
                 }
             }
