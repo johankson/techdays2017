@@ -5,17 +5,22 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ResolutionGroupName("EvilCorp")]
-[assembly: ExportEffect(typeof(AwesomeEffect), "AwesomeEffect")]
+//[assembly: ResolutionGroupName("EvilCorp")]
+//[assembly: ExportEffect(typeof(AwesomeEffect), "AwesomeEffect")]
 
 namespace demo.iOS.Effects
 {
     public class AwesomeEffect : PlatformEffect
     {
-
         protected override void OnAttached()
         {
-         
+            //Control.Layer.BorderColor = UIColor.Red.CGColor;
+            //Control.Layer.BorderWidth = 5;
+
+            //if(Control is UIButton button)
+            //{
+            //    button.Layer.BorderColor = UIColor.Blue.CGColor;
+            //}
         }
 
         protected override void OnDetached()
@@ -26,33 +31,33 @@ namespace demo.iOS.Effects
         {
             base.OnElementPropertyChanged(args);
 
-            if (args.PropertyName == "Text")
-            {
-                if (Element is Entry e)
-                {
-                    if (e.Text.Length > 8)
-                    {
-                        Control.BackgroundColor = UIColor.FromRGB(255, 0, 0);
+      //      if (args.PropertyName == "Text")
+      //      {
+      //          if (Element is Entry e)
+      //          {
+      //              if (e.Text.Length > 8)
+      //              {
+      //                  Control.BackgroundColor = UIColor.FromRGB(255, 0, 0);
 
-                        if(!Control.Subviews.OfType<UIVisualEffectView>().Any())
-                        {
-                            var blur = UIBlurEffect.FromStyle(UIBlurEffectStyle.Light);
-                            var visualEffectView = new UIVisualEffectView(blur);
-                            visualEffectView.Frame = Control.Bounds;
-                            visualEffectView.Alpha = 0.7f;
-                            Control.Add(visualEffectView);
-						}
-                    }
-                    else
-                    {
-                        Control.BackgroundColor = UIColor.FromRGB(255, 255, 255);
-                        foreach(var s in Control.Subviews.OfType<UIVisualEffectView>())
-                        {
-                            s.RemoveFromSuperview();
-                        }
-                    }
-                }
-            }
+      //                  if(!Control.Subviews.OfType<UIVisualEffectView>().Any())
+      //                  {
+      //                      var blur = UIBlurEffect.FromStyle(UIBlurEffectStyle.Light);
+      //                      var visualEffectView = new UIVisualEffectView(blur);
+      //                      visualEffectView.Frame = Control.Bounds;
+      //                      visualEffectView.Alpha = 0.7f;
+      //                      Control.Add(visualEffectView);
+						//}
+            //        }
+            //        else
+            //        {
+            //            Control.BackgroundColor = UIColor.FromRGB(255, 255, 255);
+            //            foreach(var s in Control.Subviews.OfType<UIVisualEffectView>())
+            //            {
+            //                s.RemoveFromSuperview();
+            //            }
+            //        }
+            //    }
+            //}
         }
     }
 }
