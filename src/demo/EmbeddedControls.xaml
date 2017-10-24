@@ -6,7 +6,7 @@
     x:Class="demo.EmbeddedControls">
 	<ContentPage.Content>
         <StackLayout Padding="40">
-           <ios:UILabel Text="Hello iOS world, no Forms involved" />
+          
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
