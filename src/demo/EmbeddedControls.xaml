@@ -6,12 +6,12 @@
     x:Class="demo.EmbeddedControls">
 	<ContentPage.Content>
         <StackLayout Padding="40">
-           <ios:UILabel Text="Hello iOS world, no Forms involved" />
-           <ios:UISegmentedControl x:Name="DuckSegmentControlDeluxe" />
-           <ios:UIDatePicker />
-           <ios:UISlider MaxValue="10" Value="{Binding SlideValue}" /> 
-           <ios:UIStepper />
-           <ios:UISwitch />
+            <ios:UILabel Text="Hello iOS world, no Forms involved" /> 
+            <ios:UISegmentedControl x:Name="DuckSegmentControlDeluxe" />
+            <ios:UIDatePicker />
+            <ios:UISlider MaxValue="10" Value="{Binding SlideValue}" /> 
+            <ios:UIStepper />
+            <ios:UISwitch />
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
