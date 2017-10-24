@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
+    x:Class="demo.EmbeddedControls">
+	<ContentPage.Content>
+        <StackLayout Padding="40">
+           <ios:UILabel Text="Hello iOS world, no Forms involved" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

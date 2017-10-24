@@ -23,6 +23,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)EffectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)EmbeddedControls.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -45,6 +48,9 @@
       <DependentUpon>EffectPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Effects\AwesomeEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmbeddedControls.xaml.cs">
+      <DependentUpon>EmbeddedControls.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
