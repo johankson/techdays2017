@@ -4,18 +4,8 @@
     xmlns:effects="clr-namespace:demo.Effects"
     x:Class="demo.EffectPage">
 	<ContentPage.Content>
-        <StackLayout Padding="40">
-            <Entry Placeholder="Write something" HorizontalOptions="Center" VerticalOptions="Center" FontSize="36">
-                
-            </Entry>
-
-            <Button Text="My button">
-                
-            </Button>
-
-            <Label Text="My Label">
-               
-            </Label>
-        </StackLayout>
+        <Entry Placeholder="Write something" HorizontalOptions="Center" VerticalOptions="Center" FontSize="36">
+          
+        </Entry>
 	</ContentPage.Content>
 </ContentPage>
