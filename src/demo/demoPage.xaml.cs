@@ -12,6 +12,7 @@ namespace demo
             this.BehaviorButton.Clicked += (sender, e) => Navigation.PushAsync(new BehaviorPage());
             this.EffectButton.Clicked += (sender, e) => Navigation.PushAsync(new EffectPage());
             this.EmbeddedButton.Clicked += (sender, e) => Navigation.PushAsync(new EmbeddedControls());
+            this.Custom.Clicked += (sender, e) => Navigation.PushAsync(new RenderersDemo());
         }
     }
 }

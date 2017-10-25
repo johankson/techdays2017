@@ -31,6 +31,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\OptionsControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)demoPage.xaml.cs">
       <DependentUpon>demoPage.xaml</DependentUpon>
     </Compile>
@@ -51,9 +52,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)EmbeddedControls.xaml.cs">
       <DependentUpon>EmbeddedControls.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)RenderersDemo.xaml.cs">
+      <DependentUpon>RenderersDemo.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
     <Folder Include="$(MSBuildThisFileDirectory)Behaviors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RenderersDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

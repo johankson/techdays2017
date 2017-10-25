@@ -12,5 +12,6 @@
         <Button x:Name="lottieButton" Text="Lottie Animations" />
         <Button x:Name="EffectButton" Text="Effects" />
         <Button x:Name="EmbeddedButton" Text="Embedded Controls" />
+        <Button x:Name="Custom" Text="Custom Renderers" />
     </StackLayout>
 </ContentPage>

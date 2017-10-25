@@ -24,6 +24,8 @@ namespace demo
             };
             ScaleUp.Clicked += async (sender, e) => {
                 await Box.ScaleTo(Box.Scale * 1.5, 700);
+
+               
             };
         }
     }
