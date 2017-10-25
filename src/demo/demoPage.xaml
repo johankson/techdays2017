@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:demo" 
              x:Class="demo.demoPage">
     
-	<StackLayout Padding="30,0">
+	<StackLayout Padding="30,10">
         <Label Style="{StaticResource Header}" Text="A great Xamarin Demo App" />
         <Label Style="{StaticResource SubHeader}" Text="The best" />
         <Button x:Name="BehaviorButton" Text="Behaviors" />
